@@ -91,6 +91,8 @@ reiniciar.addEventListener("click", () => {
   });
 });
 
+generarTurno();
+
 btn.forEach((boton, index) => {
   boton.addEventListener("click", (event) => {
     clic.play();
