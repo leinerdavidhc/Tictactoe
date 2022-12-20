@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+}
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: #000000;
+  background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23fffeff' fill-opacity='0.20'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 5px;
+}
+
+.contenedor {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.contenedor .title {
+    text-align: center;
+  background: rgb(255, 0, 112);
+  background: linear-gradient(
+    131deg,
+    rgba(255, 0, 112, 1) 0%,
+    rgba(0, 185, 255, 1) 100%
+  );
+  font-size: 32px;
+  font-weight: bold;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.cabecera{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cabecera #VolverJugar{
+    color: #fff;
+    background-color: rgb(0, 187, 255);
+    font-size:18px;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+.cabecera #VolverJugar:hover{
+    background-color: rgba(0, 187, 255, 0.742);
+}
+
+.cabecera #reiniciar{
+    color: #fff;
+    background-color: rgb(255, 0, 112);
+    font-size:18px;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.cabecera #reiniciar:hover{
+    background-color: rgba(255, 0, 112,0.742);   
+}
+
+.sub-Contenedor{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    gap: 10px;
+}
+.Turno{
+    justify-items: center;
+    text-align: center;
+    line-height: 32px;
+    font-size: 20px;
+    align-self: flex-start;
+}
+.tabla{
+    height: 100%;
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: repeat(3,100px);
+    grid-template-rows: repeat(3,100px);
+    place-content: center;
+    gap: 2px;
+    padding: 2px;
+}
+
+
+.tabla button{
+    background-color: #000000;
+    border: none;
+    outline: none;
+    font-size:80px;
+}
+.estadistica{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    gap: 10px;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+.cajaX,.cajaY,.cajaEmpate,.partidas{
+    border: 1px solid #fff;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    color: #fff;
+    font-size: 18px;
+    width: 80%;
+    font-weight: 600;
+}
+.cajaX span{
+    color: rgb(255, 0, 112);
+}
+.cajaY span{
+    color:rgb(0, 187, 255);
+}
+
+.crador{
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+@media screen and (min-width:600px){
+   .estadistica{
+    width: 100%;
+    flex-direction: row;
+   }
+   .cajaX,.cajaY,.cajaEmpate,.partidas{
+    width: 100%;
+   }
+
+   .cabecera #VolverJugar{
+    transform: translateX(-15px);
+   }
+   
+}
