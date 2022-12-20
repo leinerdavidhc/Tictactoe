@@ -86,10 +86,7 @@ body {
     gap: 10px;
 }
 .Turno{
-    justify-items: center;
-    text-align: center;
     font-size: 16px;
-    align-self: flex-start;
 }
 .tabla{
     height: 100%;
