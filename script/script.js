@@ -2,7 +2,7 @@ let turno;
 let puntajeX = 0;
 let puntajeO = 0;
 let empate = 0;
-let partidas = 0;
+let partidas = 1;
 
 let movimientos = 0;
 
@@ -23,7 +23,6 @@ const VolverJugar = document.getElementById("VolverJugar");
 const reiniciar = document.getElementById("reiniciar");
 
 function generarTurno() {
-  partidas = 1;
   if (partidas == 1) {
     VolverJugar.disabled = true;
   }
