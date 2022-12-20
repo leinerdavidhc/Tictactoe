@@ -116,7 +116,11 @@ btn.forEach((boton, index) => {
       win(0, 4, 8) ||
       win(2, 4, 6)
     ) {
+
       wina.play();
+      btn.forEach((boton) => {
+        boton.disabled = true;
+      });
       VolverJugar.disabled = false;
       Twin.textContent = `Ganador: ${turno ? "X" : "O"}`;
       if (turno) {
