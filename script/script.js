@@ -23,9 +23,7 @@ const VolverJugar = document.getElementById("VolverJugar");
 const reiniciar = document.getElementById("reiniciar");
 
 function generarTurno() {
-  if (partidas == 1) {
     VolverJugar.disabled = true;
-  }
   spanP.innerHTML = `Partida N°: ${partidas}`;
   if (Math.random() < 0.5) {
     turno = true;
@@ -66,8 +64,9 @@ VolverJugar.addEventListener("click", () => {
     boton.innerHTML = " ";
     boton.disabled = false;
     boton.style.backgroundColor = "#000000";
-    celdas.fill(null);
+    
   });
+celdas.fill(null);
 });
 
 reiniciar.addEventListener("click", () => {
@@ -87,8 +86,9 @@ reiniciar.addEventListener("click", () => {
     boton.innerHTML = " ";
     boton.disabled = false;
     boton.style.backgroundColor = "#000000";
-    celdas.fill(null);
   });
+
+celdas.fill(null);
 });
 
 generarTurno();
@@ -116,7 +116,7 @@ btn.forEach((boton, index) => {
       win(2, 5, 8) ||
       win(0, 4, 8) ||
       win(2, 4, 6)
-    ) {/**/
+    ) {
 
       wina.play();
       btn.forEach((boton) => {
