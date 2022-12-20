@@ -115,7 +115,7 @@ btn.forEach((boton, index) => {
       win(2, 5, 8) ||
       win(0, 4, 8) ||
       win(2, 4, 6)
-    ) {
+    ) {/**/
 
       wina.play();
       btn.forEach((boton) => {
